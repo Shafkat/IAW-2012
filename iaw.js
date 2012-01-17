@@ -7,6 +7,7 @@ var App = new Ext.Application({
 	useLoadMask: true,
 	launch: function() {
 		
+		
 		Ext.regModel('Contact', {
 			fields: ['eventName']
 		});
@@ -29,7 +30,8 @@ var App = new Ext.Application({
 			itemTpl : '{eventName}',
 			grouped : false,
 			indexBar: false,
-			onItemDisclosure: function() { alert('hey'); },
+			height: '65%',
+			onItemDisclosure: function() { alert(eventName); },
 			
 			store: store
 		});
@@ -52,25 +54,25 @@ var App = new Ext.Application({
 			{
 				xtype: 'textfield',
 				title: 'Events',
-				html: 'Our Events',
+				html: '<div><center>Our Events</center></div>',
 				cls: 'card card5',
 			},
 			{
 				xtype: 'textfield',
 				title: 'Purpose',
-				html: 'Our Purpose go here...',
+				html: '<div><center>Our Purpose go here...</center></div>',
 				cls: 'card card4'
 			},
 			{
 				xtype: 'textfield',
 				title: 'Polls',
-				html: 'Our Programs go here...',
+				html: '<div><center>Our Programs go here...</center></div>',
 				cls: 'card card3'
 			},
 			{
 				xtype: 'textfield',
 				title: 'Contribute',
-				html: 'Contribute to our cause...',
+				html: '<div><center>Contribute to our cause...</center></div>',
 				cls: 'card card2'
 			}]
 		});
@@ -87,12 +89,12 @@ var App = new Ext.Application({
 				type: 'fade',
 				cover: 'true'
 			},
-			defaults: {
-				scroll: 'vertical'
-			},
+
 			items: [{
 				xtype: 'textfield',
 				title: 'IAW',
+				itemId: 'hellow',
+				
 				html: '<p>Islamic Awareness Week 2012</p>',
 				iconCls: 'info',
 				cls: 'card card1'
@@ -153,6 +155,13 @@ var App = new Ext.Application({
 			items: [IAW.views.PageContainer]
 		});
 		
-	}
+		
+		//This piece of code can reroute to different pages.
+		//This code also required to handle clicks.
+		var el = Ext.id('hellow');
+		//alert(el.id);
+		//el.on('click', function(){ document.location.href = 'http://www.google.ca'; });
+		
+}
 });
 
