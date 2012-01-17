@@ -12,13 +12,13 @@
 </head> 
 <body> 
 
-<div data-role="page" id="#iaw_main">
+<div data-role="page" id="iaw_main">
 
 	<div data-role="header">
 		<h1 id='mainTitle'>Islamic Awareness Week 2012</h1>
 		<div data-role="navbar" >
 			<ul>
-				<li><a href="#" class="ui-btn-active">Events</a></li>
+				<li><a href="#iaw_main" class="ui-btn-active">Events</a></li>
 				<li><a href="#" >Purpose</a></li>
 				<li><a href="#">Polls</a></li>
 				<li><a href="#">Contribute</a></li>
@@ -34,7 +34,7 @@
 		<div class="content-primary">
 		<ul data-role="listview" data-inset="true" data-filter="false">
 			<li><a href="#"><center><h3>Booths</h3><p><b>Infomation about events around campus</b></p></center></a></li>
-			<li><a href="#"><center><h3>Women in Islam</h3><p><b>Lecture by Dr.Ingrid Mattson</b></p></center></a></li>
+			<li><a href="#iaw_womenInIslam"><center><h3>Women in Islam</h3><p><b>Lecture by Dr.Ingrid Mattson</b></p></center></a></li>
 			<li><a href="#"><center><h3>Shariah Law 101</h3><p><b>Lecture by Saeed Ragaeh</b></p></center></a></li>
 			<li><a href="#"><center><h3>Environment in Islam</h3><p><b>Lecture by Omar Subedar</b></p></center></a></li>
 			<li><a href="#"><center><h3>TBD</h3><p><b>Lecture by Musleh Khan</b></p></center></a></li>
@@ -45,7 +45,7 @@
 	<div data-role="footer" data-position="fixed">		
 		<div data-role="navbar" data-iconpos="top">
 			<ul>
-				<li><a href="#" data-icon="home" class="ui-btn-active">IAW</a></li>
+				<li><a href="#iaw_main" data-icon="home" class="ui-btn-active">IAW</a></li>
 				<li><a href="#" data-icon="star">Islam</a></li>
 				<li><a href="#" data-icon="info">The Prophet</a></li>
 				<li><a href="#" data-icon="grid">The Companions</a></li>
@@ -55,6 +55,60 @@
 	</div><!-- /footer -->
 
 </div><!-- /page -->
+
+
+
+<div data-role="page" id="iaw_womenInIslam">
+
+	<div data-role="header">
+		<h1 id='mainTitle'>Islamic Awareness Week 2012</h1>
+		
+		<div data-role="navbar" >
+			<ul>
+				<li><a href="#iaw_main" class="ui-btn-active">Events</a></li>
+				<li><a href="#" >Purpose</a></li>
+				<li><a href="#">Polls</a></li>
+				<li><a href="#">Contribute</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /header -->
+	
+	<br />
+	<br />
+	
+	<div id="drMattson_bio">
+	<center><img src="pictures/Mattson_sm.jpg" /><center />
+	<p>
+	Dr. Ingrid Mattson is Professor of Islamic Studies and Director of Islamic Chaplaincy at 
+	the Macdonald Center for Islamic Studies and Christian-Muslim Relations at Hartford Seminary 
+	in Hartford, CT.<br /><br />
+	Dr. Mattson was born in Canada, where she studied Philosophy at the University of Waterloo, 
+	Ontario (B.A. '87). From 1987-1988 she lived in Pakistan where she worked with Afghan refugee 
+	women. In 1995 she served as advisor to the Afghan delegation to the United Nations Commission 
+	on the Status of Women.<br /><br />
+	During her graduate studies in Chicago, Dr. Mattson was involved with the local Muslim 
+	community, serving on the board of directors of Universal School in Bridgeview and as a member 
+	of the Interfaith Committee of the Council of Islamic Organizations of Greater Chicago.<br /><br />
+	Dr. Mattson earned her Ph.D. in Islamic Studies from the University of Chicago in 1999. 
+	Her research is focused on Islamic law and society.<br /><br />
+	Dr. Mattson lives in Connecticut with her husband and two children.
+	</p>
+	</div>
+
+	<div data-role="footer" data-position="fixed">		
+		<div data-role="navbar" data-iconpos="top">
+			<ul>
+				<li><a href="#iaw_main" data-icon="home" class="ui-btn-active">IAW</a></li>
+				<li><a href="#" data-icon="star">Islam</a></li>
+				<li><a href="#" data-icon="info">The Prophet</a></li>
+				<li><a href="#" data-icon="grid">The Companions</a></li>
+				<li><a href="http://www.dailygoodness.me" data-icon="gear">Daily Goodness</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
 
 </body>
 </html>
