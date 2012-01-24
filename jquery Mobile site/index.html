@@ -1,7 +1,7 @@
 <!DOCTYPE html> 
 <html> 
 	<head> 
-	<title>Islamic Awareness Week 2012</title> 
+	<title>Islam Awareness Week 2012</title> 
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
 	<link rel="stylesheet" href="IAW_sample.min.css" />
@@ -11,15 +11,19 @@
 	<script type="text/javascript" src="script.js"></script>
 </head> 
 <body> 
-
+<style type="text/css">
+    .ui-page {
+        background: transparent url(images/gradient_texture.jpg);
+    }
+</style>
 <div data-role="page" id="iaw_main">
 
 	<div data-role="header">
-		<h1 id='mainTitle'>Islamic Awareness Week 2012</h1>
+		<h1 id='mainTitle'>Islam Awareness Week 2012</h1>
 		<div data-role="navbar" >
 			<ul>
 				<li><a href="#iaw_main" class="ui-btn-active">Events</a></li>
-				<li><a href="#" >Purpose</a></li>
+				<li><a href="#iaw_purpose" >Purpose</a></li>
 				<li><a href="#">Polls</a></li>
 				<li><a href="#">Contribute</a></li>
 			</ul>
@@ -34,22 +38,20 @@
 		<div class="content-primary">
 		<ul data-role="listview" data-inset="true" data-filter="false">
 			<li><a href="#"><center><h3>Booths</h3><p><b>Infomation about events around campus</b></p></center></a></li>
-			<li><a href="#iaw_womenInIslam"><center><h3>Women in Islam</h3><p><b>Lecture by Dr.Ingrid Mattson</b></p></center></a></li>
-			<li><a href="#"><center><h3>Shariah Law 101</h3><p><b>Lecture by Saeed Ragaeh</b></p></center></a></li>
-			<li><a href="#"><center><h3>Environment in Islam</h3><p><b>Lecture by Omar Subedar</b></p></center></a></li>
-			<li><a href="#"><center><h3>TBD</h3><p><b>Lecture by Musleh Khan</b></p></center></a></li>
+			<li><a href="#iaw_womenInIslam"><center><h3>Women in Islam</h3><p><b>Lecture by Rania Lawendy</b></p></center></a></li>
+			<li><a href="#iaw_shariah101"><center><h3>Shariah Law 101</h3><p><b>Lecture by Saeed Ragaeh</b></p></center></a></li>
+			<li><a href="#iaw_environment"><center><h3>Environment in Islam</h3><p><b>Lecture by Omar Subedar</b></p></center></a></li>
+			<li><a href="#"><center><h3>TBA</h3><p><b>Lecture by Musleh Khan</b></p></center></a></li>
 		</ul>
 		</div>
 	</div><!-- /content -->
 
-	<div data-role="footer" data-position="fixed">		
-		<div data-role="navbar" data-iconpos="top">
+	<div data-role="footer" data-position="fixed" >		
+		<div data-role="navbar" data-iconpos="top" class="ui-btn-active">
 			<ul>
 				<li><a href="#iaw_main" data-icon="home" class="ui-btn-active">IAW</a></li>
 				<li><a href="#" data-icon="star">Islam</a></li>
 				<li><a href="#" data-icon="info">The Prophet</a></li>
-				<li><a href="#" data-icon="grid">The Companions</a></li>
-				<li><a href="http://www.dailygoodness.me" data-icon="gear">Daily Goodness</a></li>
 			</ul>
 		</div><!-- /navbar -->
 	</div><!-- /footer -->
@@ -57,16 +59,16 @@
 </div><!-- /page -->
 
 
-
+<!-- page section for womenInIslam lecture -->
 <div data-role="page" id="iaw_womenInIslam">
 
 	<div data-role="header">
-		<h1 id='mainTitle'>Islamic Awareness Week 2012</h1>
+		<h1 id='mainTitle'>Islam Awareness Week 2012</h1>
 		
 		<div data-role="navbar" >
 			<ul>
 				<li><a href="#iaw_main" class="ui-btn-active">Events</a></li>
-				<li><a href="#" >Purpose</a></li>
+				<li><a href="#iaw_purpose" >Purpose</a></li>
 				<li><a href="#">Polls</a></li>
 				<li><a href="#">Contribute</a></li>
 			</ul>
@@ -76,39 +78,149 @@
 	<br />
 	<br />
 	
-	<div id="drMattson_bio">
-	<center><img src="pictures/Mattson_sm.jpg" /><center />
+	<div id="raniaLawendy_bio">
+	<center><img src="" id="raniaLawendy_img"/><center />
+	<h1><b>Rania Lawendy</b></h1>
 	<p>
-	Dr. Ingrid Mattson is Professor of Islamic Studies and Director of Islamic Chaplaincy at 
-	the Macdonald Center for Islamic Studies and Christian-Muslim Relations at Hartford Seminary 
-	in Hartford, CT.<br /><br />
-	Dr. Mattson was born in Canada, where she studied Philosophy at the University of Waterloo, 
-	Ontario (B.A. '87). From 1987-1988 she lived in Pakistan where she worked with Afghan refugee 
-	women. In 1995 she served as advisor to the Afghan delegation to the United Nations Commission 
-	on the Status of Women.<br /><br />
-	During her graduate studies in Chicago, Dr. Mattson was involved with the local Muslim 
-	community, serving on the board of directors of Universal School in Bridgeview and as a member 
-	of the Interfaith Committee of the Council of Islamic Organizations of Greater Chicago.<br /><br />
-	Dr. Mattson earned her Ph.D. in Islamic Studies from the University of Chicago in 1999. 
-	Her research is focused on Islamic law and society.<br /><br />
-	Dr. Mattson lives in Connecticut with her husband and two children.
+	Bio Goes Here.
 	</p>
 	</div>
 
 	<div data-role="footer" data-position="fixed">		
-		<div data-role="navbar" data-iconpos="top">
+		<div data-role="navbar" data-iconpos="top" class="ui-btn-active">
 			<ul>
 				<li><a href="#iaw_main" data-icon="home" class="ui-btn-active">IAW</a></li>
 				<li><a href="#" data-icon="star">Islam</a></li>
 				<li><a href="#" data-icon="info">The Prophet</a></li>
-				<li><a href="#" data-icon="grid">The Companions</a></li>
-				<li><a href="http://www.dailygoodness.me" data-icon="gear">Daily Goodness</a></li>
 			</ul>
 		</div><!-- /navbar -->
 	</div><!-- /footer -->
 
 </div><!-- /page -->
+<!-- /page section for womenInIslam lecture -->
 
+
+<!-- page section for Shariah Law 101 lecture -->
+<div data-role="page" id="iaw_shariah101">
+
+	<div data-role="header">
+		<h1 id='mainTitle'>Islam Awareness Week 2012</h1>
+		
+		<div data-role="navbar" >
+			<ul>
+				<li><a href="#iaw_main" class="ui-btn-active">Events</a></li>
+				<li><a href="#iaw_purpose" >Purpose</a></li>
+				<li><a href="#">Polls</a></li>
+				<li><a href="#">Contribute</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /header -->
+	
+	<br />
+	<br />
+	
+	<div id="SaeedRagaeh_bio">
+	<center><img src="images/SaeedRagaeh.jpg" id="SaeedRagaeh_img" width="350em"/><center />
+	<h1><b>Saeed Ragaeh</b></h1>
+	<p>
+	Bio Goes Here.
+	</p>
+	</div>
+
+	<div data-role="footer" data-position="fixed">		
+		<div data-role="navbar" data-iconpos="top" class="ui-btn-active">
+			<ul>
+				<li><a href="#iaw_main" data-icon="home" class="ui-btn-active">IAW</a></li>
+				<li><a href="#" data-icon="star">Islam</a></li>
+				<li><a href="#" data-icon="info">The Prophet</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+<!-- /page section for Environment lecture -->
+
+
+<!-- page section for Shariah Law 101 lecture -->
+<div data-role="page" id="iaw_environment">
+
+	<div data-role="header">
+		<h1 id='mainTitle'>Islam Awareness Week 2012</h1>
+		
+		<div data-role="navbar" >
+			<ul>
+				<li><a href="#iaw_main" class="ui-btn-active">Events</a></li>
+				<li><a href="#iaw_purpose" >Purpose</a></li>
+				<li><a href="#">Polls</a></li>
+				<li><a href="#">Contribute</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /header -->
+	
+	<br />
+	<br />
+	
+	<div id="OmarSubedar_bio">
+	<center><img src="images/omarSubedar.gif" id="OmarSubedar_img" width="200em"/><center />
+	<h1><b>Omar Subedar</b></h1>
+	<p>
+	Bio Goes Here.
+	</p>
+	</div>
+
+	<div data-role="footer" data-position="fixed">		
+		<div data-role="navbar" data-iconpos="top" class="ui-btn-active">
+			<ul>
+				<li><a href="#iaw_main" data-icon="home" class="ui-btn-active">IAW</a></li>
+				<li><a href="#" data-icon="star">Islam</a></li>
+				<li><a href="#" data-icon="info">The Prophet</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+<!-- /page section for Environment lecture -->
+
+
+<!-- page section for IAW purpose -->
+<div data-role="page" id="iaw_purpose">
+
+	<div data-role="header">
+		<h1 id='mainTitle'>Islam Awareness Week 2012</h1>
+		
+		<div data-role="navbar" >
+			<ul>
+				<li><a href="#iaw_main">Events</a></li>
+				<li><a href="#iaw_purpose" class="ui-btn-active">Purpose</a></li>
+				<li><a href="#">Polls</a></li>
+				<li><a href="#">Contribute</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /header -->
+	
+	<br />
+	<br />
+	
+	<div id="SaeedRagaeh_bio">
+	<center><img src="images/iaw_logo.png" id="SaeedRagaeh_img" width="350em"/><center />
+	<h1><b>Our Purpose</b></h1>
+	<p>
+	Inform non-muslims about Islam.
+	</p>
+	</div>
+
+	<div data-role="footer" data-position="fixed">		
+		<div data-role="navbar" data-iconpos="top" class="ui-btn-active">
+			<ul>
+				<li><a href="#iaw_main" data-icon="home" class="ui-btn-active">IAW</a></li>
+				<li><a href="#" data-icon="star">Islam</a></li>
+				<li><a href="#" data-icon="info">The Prophet</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+<!-- /page section for IAW purpose -->
 
 </body>
 </html>
