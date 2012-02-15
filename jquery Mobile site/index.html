@@ -24,8 +24,8 @@
 			<ul>
 				<li><a href="#iaw_main" class="ui-btn-active">Events</a></li>
 				<li><a href="#iaw_purpose" >Purpose</a></li>
-				<li><a href="#">Polls</a></li>
-				<li><a href="#">Contribute</a></li>
+				<li><a href="#iaw_polls">Polls</a></li>
+				<li><a href="#iaw_contribute">Contribute</a></li>
 			</ul>
 		</div><!-- /navbar -->
 	</div><!-- /header -->
@@ -37,11 +37,11 @@
 		<!--List of Events -->
 		<div class="content-primary">
 		<ul data-role="listview" data-inset="true" data-filter="false">
-			<li><a href="#"><center><h3>Booths</h3><p><b>Infomation about events around campus</b></p></center></a></li>
+			<li><a href="#iaw_booths"><center><h3>Booths</h3><p><b>Infomation about events around campus</b></p></center></a></li>
 			<li><a href="#iaw_womenInIslam"><center><h3>Women in Islam</h3><p><b>Lecture by Rania Lawendy</b></p></center></a></li>
 			<li><a href="#iaw_shariah101"><center><h3>Shariah Law 101</h3><p><b>Lecture by Saeed Ragaeh</b></p></center></a></li>
 			<li><a href="#iaw_environment"><center><h3>Environment in Islam</h3><p><b>Lecture by Omar Subedar</b></p></center></a></li>
-			<li><a href="#"><center><h3>TBA</h3><p><b>Lecture by Musleh Khan</b></p></center></a></li>
+			<li><a href="#iaw_muslehKhan"><center><h3>Prophetic Lineage: Jesus and Mohammed</h3><p><b>Lecture by Musleh Khan</b></p></center></a></li>
 		</ul>
 		</div>
 	</div><!-- /content -->
@@ -50,7 +50,7 @@
 		<div data-role="navbar" data-iconpos="top" class="ui-btn-active">
 			<ul>
 				<li><a href="#iaw_main" data-icon="home" class="ui-btn-active">IAW</a></li>
-				<li><a href="#" data-icon="star">Islam</a></li>
+				<li><a href="#islamIntro" data-icon="star">Islam</a></li>
 				<li><a href="#prophetIntro" data-icon="info">The Prophet</a></li>
 			</ul>
 		</div><!-- /navbar -->
@@ -58,19 +58,64 @@
 
 </div><!-- /page -->
 
-
-<!-- page section for womenInIslam lecture -->
-<div data-role="page" id="iaw_womenInIslam">
+<!-- page section for booths -->
+<div data-role="page" id="iaw_booths">
 
 	<div data-role="header">
-		<h1 id='mainTitle'>Islam Awareness Week 2012</h1>
+		<h1 id='mainTitle'>Islam Booths</h1>
 		
 		<div data-role="navbar" >
 			<ul>
 				<li><a href="#iaw_main" class="ui-btn-active">Events</a></li>
 				<li><a href="#iaw_purpose" >Purpose</a></li>
-				<li><a href="#">Polls</a></li>
-				<li><a href="#">Contribute</a></li>
+				<li><a href="#iaw_polls">Polls</a></li>
+				<li><a href="#iaw_contribute">Contribute</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /header -->
+	
+	<br />
+	<br />
+	
+	<div id="booths">
+	<center><img src="" id="booths_img"/><center />
+	<h1><b>IAW Booths</b></h1>
+		<div class="content-primary">
+		<ul data-role="listview" data-inset="true" data-filter="false">
+		<li><a href="#iaw_UW"><table align="center"><tr><td width="150em"><img src="images/uwmsa.png" width="125em"/></td>
+		<td><h3>University of Waterloo</h3><br /><p><b>Check out the schedules in UW!</b></p></td></tr></table></a></li>
+		<li><a href="#iaw_UW"><table align="center"><tr><td width="150em"><img src="images/wlumsa.png" width="150em"/></td>
+		<td><h3>Wlifred Laurier University</h3><br /><p><b>Check out the schedules in WLU!</b></p></td></tr></table></a></li>
+		</ul>
+		</div>
+	</div>
+
+	<div data-role="footer" data-position="fixed">		
+		<div data-role="navbar" data-iconpos="top" class="ui-btn-active">
+			<ul>
+				<li><a href="#iaw_main" data-icon="home" class="ui-btn-active">IAW</a></li>
+				<li><a href="#islamIntro" data-icon="star">Islam</a></li>
+				<li><a href="#prophetIntro" data-icon="info">The Prophet</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+<!-- /page section for booths -->
+
+
+<!-- page section for womenInIslam lecture -->
+<div data-role="page" id="iaw_womenInIslam">
+
+	<div data-role="header">
+		<h1 id='mainTitle'>Women in Islam</h1>
+		
+		<div data-role="navbar" >
+			<ul>
+				<li><a href="#iaw_main" class="ui-btn-active">Events</a></li>
+				<li><a href="#iaw_purpose" >Purpose</a></li>
+				<li><a href="#iaw_polls">Polls</a></li>
+				<li><a href="#iaw_contribute">Contribute</a></li>
 			</ul>
 		</div><!-- /navbar -->
 	</div><!-- /header -->
@@ -82,7 +127,8 @@
 	<center><img src="" id="raniaLawendy_img"/><center />
 	<h1><b>Rania Lawendy</b></h1>
 	<p>
-	Bio Goes Here.
+		Sister Rania is a graduate from the University of Waterloo where she obtained her Bachelor of Science degree and where she also served as MSA president.  She has been actively involved in a vast array of Islamic work since 1990 working with youth, education, and community services.
+		She is currently the Principal of the Al-Huda School in Waterloo, plays an active role in the building and running of the Kitchener Masjid and partakes in various Islamic dialogues in and around the area.  She is married with 4 children and resides in Waterloo.
 	</p>
 	</div>
 
@@ -90,7 +136,7 @@
 		<div data-role="navbar" data-iconpos="top" class="ui-btn-active">
 			<ul>
 				<li><a href="#iaw_main" data-icon="home" class="ui-btn-active">IAW</a></li>
-				<li><a href="#" data-icon="star">Islam</a></li>
+				<li><a href="#islamIntro" data-icon="star">Islam</a></li>
 				<li><a href="#prophetIntro" data-icon="info">The Prophet</a></li>
 			</ul>
 		</div><!-- /navbar -->
@@ -104,14 +150,14 @@
 <div data-role="page" id="iaw_shariah101">
 
 	<div data-role="header">
-		<h1 id='mainTitle'>Islam Awareness Week 2012</h1>
+		<h1 id='mainTitle'>Shariah Law 101</h1>
 		
 		<div data-role="navbar" >
 			<ul>
 				<li><a href="#iaw_main" class="ui-btn-active">Events</a></li>
 				<li><a href="#iaw_purpose" >Purpose</a></li>
-				<li><a href="#">Polls</a></li>
-				<li><a href="#">Contribute</a></li>
+				<li><a href="#iaw_polls">Polls</a></li>
+				<li><a href="#iaw_contribute">Contribute</a></li>
 			</ul>
 		</div><!-- /navbar -->
 	</div><!-- /header -->
@@ -123,7 +169,13 @@
 	<center><img src="images/saeedRagaeh.jpg" id="SaeedRagaeh_img" width="350em"/><center />
 	<h1><b>Saeed Ragaeh</b></h1>
 	<p>
-	Bio Goes Here.
+	He is one man but has done the work of many. Co-founder and Chairman of Journey of Faith, Shaykh Said Rageah is a distinguished Muslim Imaam and Scholar, dearly loved and celebrated for his substantial community service. Powerhouse of knowledge, kindness and leadership, Shaykh Said Rageah is the esteemed Founder of Oasis magazine, Youth Hotline, Orphans Matter, Muslim Youth Camp, Muslim Student Loan Foundation and Muslim Basketball Association.
+	</p>
+	<p>
+	Born in Somalia and raised in Saudi Arabia, Shaykh Said earned his B.A in Islamic Studies and Masters in Shariah from the Institute of Islamic and Arabic Sciences in Fairfax, Virginia. He studied under prominent Scholars like Shaykh Abdul Aziz Al Fowzan, Shaykh Yusuf Ashubaily, Shaykh AlKhudair, Shaykh Rashid Aladawni and Shaykh Fahad al Alhaoud. Before moving to Canada, Shaykh Said founded and served as Imaam of Masjid Aya in Maryland and established IQ Quran Institute.
+	</p>
+	<p>
+	In Canada, he worked as a counselor at the University of Calgary and Muslim Chaplain in the Southern Alberta Institute of Technology (SAIT). Shaykh Said Rageah moved to Toronto where he is the Imaam of Abu Huraira Islamic Center, Instructor at Al-Maghrib Institute and Director of Ummah Times Magazine. He is married and has four daughters and two sons. He enjoys spending quality time with his family and playing basketball with his students.
 	</p>
 	</div>
 
@@ -131,7 +183,7 @@
 		<div data-role="navbar" data-iconpos="top" class="ui-btn-active">
 			<ul>
 				<li><a href="#iaw_main" data-icon="home" class="ui-btn-active">IAW</a></li>
-				<li><a href="#" data-icon="star">Islam</a></li>
+				<li><a href="#islamIntro" data-icon="star">Islam</a></li>
 				<li><a href="#prophetIntro" data-icon="info">The Prophet</a></li>
 			</ul>
 		</div><!-- /navbar -->
@@ -145,14 +197,14 @@
 <div data-role="page" id="iaw_environment">
 
 	<div data-role="header">
-		<h1 id='mainTitle'>Islam Awareness Week 2012</h1>
+		<h1 id='mainTitle'>Importance of Environment in Islam</h1>
 		
 		<div data-role="navbar" >
 			<ul>
 				<li><a href="#iaw_main" class="ui-btn-active">Events</a></li>
 				<li><a href="#iaw_purpose" >Purpose</a></li>
-				<li><a href="#">Polls</a></li>
-				<li><a href="#">Contribute</a></li>
+				<li><a href="#iaw_polls">Polls</a></li>
+				<li><a href="#iaw_contribute">Contribute</a></li>
 			</ul>
 		</div><!-- /navbar -->
 	</div><!-- /header -->
@@ -163,16 +215,37 @@
 	<div id="OmarSubedar_bio">
 	<center><img src="images/omarSubedar.gif" id="OmarSubedar_img" width="200em"/><center />
 	<h1><b>Omar Subedar</b></h1>
-	<p>
-	Bio Goes Here.
-	</p>
+	<table border="0px" cellspacing="4" cellpadding="10" width="1000em">
+	<tr>
+	<td align="center" >
+		Shaykh Omar Subedar was born and raised in Toronto , Canada . In 1990 he was inspired by a very close friend to 
+		memorize the entire Qur'an and enrolled in the renowned 'Institute of Islamic Education', located in Dewsbury, 
+		West Yorkshire, U.K. Upon committing the entire Qur'an to memory in 1993 he decided to further his Islamic education 
+		by taking the institutes' Master of Arts program on Islamic Sciences. In this program the Shaykh studied:
+		<br /><br />
+		Arabic grammar, morphology, semantics, vocabulary and literature.<br />
+		Islamic Creed (aqeeda)</li>
+		Exegesis (tafseer) of the Qur'an and the science of exegesis.<br />
+		Islamic Jurisprudence (fiqh) of the Hanafi School (madhab). Comparative studies on all 4 recognized 
+		schools (Hanafi, Shafi'ee, Malik and Hanbali) and the science of juristic methodology (usul al fiqh).<br />
+		Prophetic Traditions (hadith) and the science of hadith.<br />
+		Islamic History<br />
+		Pronunciation of the Qur'an (tajweed) and the science of intonation of the Qur'an according to all the ten major recitations (qira'aat).<br />
+		<br />
+		By the grace of Allah the Shaykh graduated from the program in 2001 with an average of 93% in his final exams and was granted a scholarly license from the institute.
+		<br />
+		Upon his return the Shaykh taught at the Shariah Program for 3 years. Currently he is the Imam of Jame Makki Masjid Brampton, 
+		the executive member of 'The Canadian Council of Muslim Theologians', the secretary general of 'The Halal Monitoring Authority' and ateacher at takemetoumrah .com and an instructor at the Mathabah Foundation.
+	</td>
+	</tr>
+	</table>
 	</div>
 
 	<div data-role="footer" data-position="fixed">		
 		<div data-role="navbar" data-iconpos="top" class="ui-btn-active">
 			<ul>
 				<li><a href="#iaw_main" data-icon="home" class="ui-btn-active">IAW</a></li>
-				<li><a href="#" data-icon="star">Islam</a></li>
+				<li><a href="#islamIntro" data-icon="star">Islam</a></li>
 				<li><a href="#prophetIntro" data-icon="info">The Prophet</a></li>
 			</ul>
 		</div><!-- /navbar -->
@@ -181,6 +254,56 @@
 </div><!-- /page -->
 <!-- /page section for Environment lecture -->
 
+<!-- page section for Musleh Khan -->
+<div data-role="page" id="iaw_muslehKhan">
+
+	<div data-role="header">
+		<h1 id='mainTitle'>Prophetic Lineage: Jesus and Mohammed</h1>
+		
+		<div data-role="navbar" >
+			<ul>
+				<li><a href="#iaw_main" class="ui-btn-active">Events</a></li>
+				<li><a href="#iaw_purpose" >Purpose</a></li>
+				<li><a href="#iaw_polls">Polls</a></li>
+				<li><a href="#iaw_contribute">Contribute</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /header -->
+	
+	<br />
+	<br />
+	
+	<div id="muslehKhan">
+	<center><img src="images/muslehKhan.jpg" id="muslehKhan_img" width="200em"/><center />
+	<h1><b>Musleh Khan</b></h1>
+	<table border="0px" cellspacing="4" cellpadding="10" width="1000em">
+	<tr>
+	<td align="center" >
+	Ustadh Musleh Khan was born in Madinah, Saudi Arabia. He was raised and is currently residing in Toronto, Canada.<br />At college he studied computer programming and then went to work as a Fraud analyst.<br /><br />
+	In 2002 ustadh Musleh was accepted at the Islamic University of Madinah where he completed a diploma in Arabic followed by a BA in Islamic Law from the faculty of Da'wah and Usul Al-Din. 
+He memorised the Qur'an with an ijaza and has completed a complete study of Sahih Al-Bukhari.
+Ustadh Musleh undertook a study of various Islamic books including those on Fiqh, Hadith, 'Aqidah, Usul and Tafsir. 
+Futhermore, he took classes with various prominent scholars in the course of his time in Madinah, including Sheikh Mukhtar Al-Shanqiti, Sheikh Muhsin Al-Abaad, Sheikh Abd al-Razak and Sheikh Muhammed Shafi among others.<br /><br />
+Upon graduating in 2011 he has returned to Canada and has plans to pursue a Masters at York University, Toronto. 
+He has been very active in the Toronto vicinity for more than 10 years, having conducted khutbahs, classes, lectures and conferences, as well as various Islamic Intensive programs in the United States.
+​Ustadh Musleh enjoys long-distance running and basketball. He loves to read and write in addition to spending time preparing for classes in Toronto where he and his wife reside.
+	</td>
+	</tr>
+	</table>
+	</div>
+
+	<div data-role="footer" data-position="fixed">		
+		<div data-role="navbar" data-iconpos="top" class="ui-btn-active">
+			<ul>
+				<li><a href="#iaw_main" data-icon="home" class="ui-btn-active">IAW</a></li>
+				<li><a href="#islamIntro" data-icon="star">Islam</a></li>
+				<li><a href="#prophetIntro" data-icon="info">The Prophet</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+<!-- /page section for Musleh Khan -->
 
 <!-- page section for IAW purpose -->
 <div data-role="page" id="iaw_purpose">
@@ -192,8 +315,8 @@
 			<ul>
 				<li><a href="#iaw_main">Events</a></li>
 				<li><a href="#iaw_purpose" class="ui-btn-active">Purpose</a></li>
-				<li><a href="#">Polls</a></li>
-				<li><a href="#">Contribute</a></li>
+				<li><a href="#iaw_polls">Polls</a></li>
+				<li><a href="#iaw_contribute">Contribute</a></li>
 			</ul>
 		</div><!-- /navbar -->
 	</div><!-- /header -->
@@ -213,7 +336,7 @@
 		<div data-role="navbar" data-iconpos="top" class="ui-btn-active">
 			<ul>
 				<li><a href="#iaw_main" data-icon="home" class="ui-btn-active">IAW</a></li>
-				<li><a href="#" data-icon="star">Islam</a></li>
+				<li><a href="#islamIntro" data-icon="star">Islam</a></li>
 				<li><a href="#prophetIntro" data-icon="info">The Prophet</a></li>
 			</ul>
 		</div><!-- /navbar -->
@@ -221,6 +344,291 @@
 
 </div><!-- /page -->
 <!-- /page section for IAW purpose -->
+
+<!-- page section for IAW Polls -->
+<div data-role="page" id="iaw_polls">
+
+	<div data-role="header">
+		<h1 id='mainTitle'>Islam Awareness Week 2012</h1>
+		
+		<div data-role="navbar" >
+			<ul>
+				<li><a href="#iaw_main">Events</a></li>
+				<li><a href="#iaw_purpose">Purpose</a></li>
+				<li><a href="#iaw_polls" class="ui-btn-active">Polls</a></li>
+				<li><a href="#iaw_contribute">Contribute</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /header -->
+	
+	<br />
+	<br />
+	
+	<div id="iaw_polls_content">
+	<center><img src="" id="iaw_logo_img" width="350em"/><center />
+	<h1><b>Polls</b></h1>
+	<p>
+	Polls go here.
+	</p>
+	</div>
+
+	<div data-role="footer" data-position="fixed">		
+		<div data-role="navbar" data-iconpos="top" class="ui-btn-active">
+			<ul>
+				<li><a href="#iaw_main" data-icon="home" class="ui-btn-active">IAW</a></li>
+				<li><a href="#islamIntro" data-icon="star">Islam</a></li>
+				<li><a href="#prophetIntro" data-icon="info">The Prophet</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+<!-- /page section for IAW Polls -->
+
+<!-- page section for IAW Contribute -->
+<div data-role="page" id="iaw_contribute">
+
+	<div data-role="header">
+		<h1 id='mainTitle'>Islam Awareness Week 2012</h1>
+		
+		<div data-role="navbar" >
+			<ul>
+				<li><a href="#iaw_main">Events</a></li>
+				<li><a href="#iaw_purpose">Purpose</a></li>
+				<li><a href="#iaw_polls">Polls</a></li>
+				<li><a href="#iaw_contribute"class="ui-btn-active">Contribute</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /header -->
+	
+	<br />
+	<br />
+	
+	<div id="iaw_contribute_content">
+	<center><img src="" id="iaw_logo_img" width="350em"/><center />
+	<h1><b>Contribute</b></h1>
+	<p>
+	Contribute info goes here.
+	</p>
+	</div>
+
+	<div data-role="footer" data-position="fixed">		
+		<div data-role="navbar" data-iconpos="top" class="ui-btn-active">
+			<ul>
+				<li><a href="#iaw_main" data-icon="home" class="ui-btn-active">IAW</a></li>
+				<li><a href="#islamIntro" data-icon="star">Islam</a></li>
+				<li><a href="#prophetIntro" data-icon="info">The Prophet</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+<!-- /page section for IAW Contribute -->
+
+<!-- page section for Islam-->
+<div data-role="page" id="islamIntro">
+
+	<div data-role="header">
+		<h1 id='mainTitle'>Islam</h1>
+		
+		<div data-role="navbar" >
+			<ul>
+				<li><a href="#islamIntro" class="ui-btn-active">Introduction to Islam</a></li>
+				<li><a href="#islamUnique1" >Title 1</a></li>
+				<li><a href="#islamUnique2">Title 2</a></li>
+				<li><a href="#islamUnique3">Title 3</a></li>
+				<li><a href="#islamUnique4">Title 4</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /header -->
+	
+	<br />
+	<br />
+	
+	<div id="islamIntro_content">
+	<center><img src="" id="" width="150em"/><center />
+	<h1><b>Introduction to Islam</b></h1>
+	<p>
+		Intro to Islam goes here
+	</p>
+	</div>
+
+	<div data-role="footer" data-position="fixed">		
+		<div data-role="navbar" data-iconpos="top" class="ui-btn-active">
+			<ul>
+				<li><a href="#iaw_main" data-icon="home">IAW</a></li>
+				<li><a href="#islamIntro" data-icon="star" class="ui-btn-active">Islam</a></li>
+				<li><a href="#prophetIntro" data-icon="info">The Prophet</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+<!-- /page section for Introduction to Islam-->
+
+<!-- page section for Islam Title 1-->
+<div data-role="page" id="islamUnique1">
+
+	<div data-role="header">
+		<h1 id='mainTitle'>Islam</h1>
+		
+		<div data-role="navbar" >
+			<ul>
+				<li><a href="#islamIntro" >Introduction to Islam</a></li>
+				<li><a href="#islamUnique1" class="ui-btn-active">Title 1</a></li>
+				<li><a href="#islamUnique2">Title 2</a></li>
+				<li><a href="#islamUnique3">Title 3</a></li>
+				<li><a href="#islamUnique4">Title 4</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /header -->
+	
+	<br />
+	<br />
+	
+	<div id="islamUnique1_content">
+	<center><img src="" id="" width="150em"/><center />
+	<h1><b>Title 1</b></h1>
+	<p>
+		Title 1 Content
+	</p>
+	</div>
+
+	<div data-role="footer" data-position="fixed">		
+		<div data-role="navbar" data-iconpos="top" class="ui-btn-active">
+			<ul>
+				<li><a href="#iaw_main" data-icon="home">IAW</a></li>
+				<li><a href="#islamIntro" data-icon="star" class="ui-btn-active">Islam</a></li>
+				<li><a href="#prophetIntro" data-icon="info">The Prophet</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+<!-- /page section for Introduction to Title 1-->
+
+<!-- page section for Islam Title 2-->
+<div data-role="page" id="islamUnique2">
+
+	<div data-role="header">
+		<h1 id='mainTitle'>Islam</h1>
+		
+		<div data-role="navbar" >
+			<ul>
+				<li><a href="#islamIntro" >Introduction to Islam</a></li>
+				<li><a href="#islamUnique1" >Title 1</a></li>
+				<li><a href="#islamUnique2" class="ui-btn-active">Title 2</a></li>
+				<li><a href="#islamUnique3">Title 3</a></li>
+				<li><a href="#islamUnique4">Title 4</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /header -->
+	
+	<br />
+	<br />
+	
+	<div id="islamUnique2_content">
+	<center><img src="" id="" width="150em"/><center />
+	<h1><b>Title 2</b></h1>
+	<p>
+		Title 2 Content
+	</p>
+	</div>
+
+	<div data-role="footer" data-position="fixed">		
+		<div data-role="navbar" data-iconpos="top" class="ui-btn-active">
+			<ul>
+				<li><a href="#iaw_main" data-icon="home">IAW</a></li>
+				<li><a href="#islamIntro" data-icon="star" class="ui-btn-active">Islam</a></li>
+				<li><a href="#prophetIntro" data-icon="info">The Prophet</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+<!-- /page section for Introduction to Title 2-->
+
+<!-- page section for Islam Title 3-->
+<div data-role="page" id="islamUnique3">
+
+	<div data-role="header">
+		<h1 id='mainTitle'>Islam</h1>
+		
+		<div data-role="navbar" >
+			<ul>
+				<li><a href="#islamIntro" >Introduction to Islam</a></li>
+				<li><a href="#islamUnique1" >Title 1</a></li>
+				<li><a href="#islamUnique2">Title 2</a></li>
+				<li><a href="#islamUnique3" class="ui-btn-active">Title 3</a></li>
+				<li><a href="#islamUnique4">Title 4</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /header -->
+	
+	<br />
+	<br />
+	
+	<div id="islamUnique3_content">
+	<center><img src="" id="" width="150em"/><center />
+	<h1><b>Title 3</b></h1>
+	<p>
+		Title 3 Content
+	</p>
+	</div>
+
+	<div data-role="footer" data-position="fixed">		
+		<div data-role="navbar" data-iconpos="top" class="ui-btn-active">
+			<ul>
+				<li><a href="#iaw_main" data-icon="home">IAW</a></li>
+				<li><a href="#islamIntro" data-icon="star" class="ui-btn-active">Islam</a></li>
+				<li><a href="#prophetIntro" data-icon="info">The Prophet</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+<!-- /page section for Introduction to Title 3-->
+
+<!-- page section for Islam Title 4-->
+<div data-role="page" id="islamUnique4">
+
+	<div data-role="header">
+		<h1 id='mainTitle'>Islam</h1>
+		
+		<div data-role="navbar" >
+			<ul>
+				<li><a href="#islamIntro" >Introduction to Islam</a></li>
+				<li><a href="#islamUnique1" >Title 1</a></li>
+				<li><a href="#islamUnique2">Title 2</a></li>
+				<li><a href="#islamUnique3">Title 3</a></li>
+				<li><a href="#islamUnique4" class="ui-btn-active">Title 4</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /header -->
+	
+	<br />
+	<br />
+	
+	<div id="islamUnique4_content">
+	<center><img src="" id="" width="150em"/><center />
+	<h1><b>Title 4</b></h1>
+	<p>
+		Title 4 Content
+	</p>
+	</div>
+
+	<div data-role="footer" data-position="fixed">		
+		<div data-role="navbar" data-iconpos="top" class="ui-btn-active">
+			<ul>
+				<li><a href="#iaw_main" data-icon="home">IAW</a></li>
+				<li><a href="#islamIntro" data-icon="star" class="ui-btn-active">Islam</a></li>
+				<li><a href="#prophetIntro" data-icon="info">The Prophet</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+<!-- /page section for Introduction to Title 4-->
 
 
 <!-- page section for The Prophet pbuh Introduction-->
@@ -257,7 +665,7 @@
 		<div data-role="navbar" data-iconpos="top" class="ui-btn-active">
 			<ul>
 				<li><a href="#iaw_main" data-icon="home">IAW</a></li>
-				<li><a href="#" data-icon="star">Islam</a></li>
+				<li><a href="#islamIntro" data-icon="star">Islam</a></li>
 				<li><a href="#prophetIntro" data-icon="info" class="ui-btn-active">The Prophet</a></li>
 			</ul>
 		</div><!-- /navbar -->
@@ -311,7 +719,7 @@
 		<div data-role="navbar" data-iconpos="top" class="ui-btn-active">
 			<ul>
 				<li><a href="#iaw_main" data-icon="home">IAW</a></li>
-				<li><a href="#" data-icon="star">Islam</a></li>
+				<li><a href="#islamIntro" data-icon="star">Islam</a></li>
 				<li><a href="#prophetIntro" data-icon="info" class="ui-btn-active">The Prophet</a></li>
 			</ul>
 		</div><!-- /navbar -->
@@ -374,7 +782,7 @@
 		<div data-role="navbar" data-iconpos="top" class="ui-btn-active">
 			<ul>
 				<li><a href="#iaw_main" data-icon="home">IAW</a></li>
-				<li><a href="#" data-icon="star">Islam</a></li>
+				<li><a href="#islamIntro" data-icon="star">Islam</a></li>
 				<li><a href="#prophetIntro" data-icon="info" class="ui-btn-active">The Prophet</a></li>
 			</ul>
 		</div><!-- /navbar -->
@@ -423,7 +831,7 @@
 		<div data-role="navbar" data-iconpos="top" class="ui-btn-active">
 			<ul>
 				<li><a href="#iaw_main" data-icon="home">IAW</a></li>
-				<li><a href="#" data-icon="star">Islam</a></li>
+				<li><a href="#islamIntro" data-icon="star">Islam</a></li>
 				<li><a href="#prophetIntro" data-icon="info" class="ui-btn-active">The Prophet</a></li>
 			</ul>
 		</div><!-- /navbar -->
@@ -478,7 +886,7 @@
 		<div data-role="navbar" data-iconpos="top" class="ui-btn-active">
 			<ul>
 				<li><a href="#iaw_main" data-icon="home">IAW</a></li>
-				<li><a href="#" data-icon="star">Islam</a></li>
+				<li><a href="#islamIntro" data-icon="star">Islam</a></li>
 				<li><a href="#prophetIntro" data-icon="info"class="ui-btn-active">The Prophet</a></li>
 			</ul>
 		</div><!-- /navbar -->
