@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>IAW 2012</title> 
+	<link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+
+<style>
+h1
+{
+	padding-top: 1em;
+	font: 3em Quicksand; color: black;
+	filter: dropshadow(color=#ffffff, offx=, offy=1);	
+}
+</style>
+
+<script>
+	
+	var colors = ["#5DCA53", "#55C3DC", "#E24B2C", "#E8BF56", "#6D165A"];
+	
+	function bored()
+	{
+		var rand = Math.floor(Math.random()*5);
+		
+		document.body.style.background = colors[rand];
+		
+		moreBored();
+	}
+	
+	function moreBored()
+	{
+		var t = setTimeout("bored()",2000);
+	}
+
+</script>
+
+	</head> 
+
+<body onLoad="bored(); "> 
+	<center>
+	<div>
+		<h1>Coming Soon Folks!</h1>
+	</div>
+	</center>
+</body>
+
+</html>
