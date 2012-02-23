@@ -1,8 +1,10 @@
 # -FrontPage-
 
-Options +FollowSymLinks
+# For security reasons, Option followsymlinks cannot be overridden.
+#Options +FollowSymLinks
+Options +SymLinksIfOwnerMatch
 RewriteCond %{THE_REQUEST} ^.*/index.html
-RewriteRule ^(.*)index.html$ http://www.sayerrecords.com/$1 [R=301,L]
+RewriteRule ^(.*)index.html$ http://www.omygod.ca/$1 [R=301,L]
 
 IndexIgnore .htaccess */.??* *~ *# */HEADER* */README* */_vti*
 
